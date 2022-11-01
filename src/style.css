@@ -1,0 +1,136 @@
+:root{
+  --delete: red;
+  --edit: green;
+  --cancel: blue;
+  --completed: rgb(206, 168, 0);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap'); 
+ 
+ body{
+  box-sizing: border-box;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ }
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+ }
+
+ .card{
+  background-color: white;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(95, 95, 95);
+ }
+
+.item_container{
+  background-color:#f8f9fe;
+  min-height: 89px;
+  display: flex;
+  position: relative;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.item_buttons_container{
+  position: absolute;
+  right: 0;
+}
+
+.item_button{
+  border: none;
+  box-shadow: inset 0 0 10px rgb(156, 156, 156);
+  border-radius: 10px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.complete_button{
+  background-color: var(--completed);
+}
+
+.delete_button{
+  background-color: var(--delete);
+}
+
+.edit_button{
+  background-color: var(--edit);
+}
+
+.confirm_button{
+  background-color: var(--cancel);
+}
+
+.delete_button:hover{
+  box-shadow: 0 0 10px var(--delete);
+}
+
+.edit_button:hover{
+  box-shadow: 0 0 10px var(--edit);
+}
+
+.confirm_button:hover{
+  box-shadow: 0 0 10px var(--cancel);
+}
+
+.complete_button:hover{
+  box-shadow: 0 0 10px var(--completed);
+}
+
+.date_info{
+  color: rgb(116, 160, 202);
+}
+
+.card_ev{
+  width: 530px;
+  transition: height 1s;
+}
+
+.timer_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.timer{
+  font-size: 70px;
+}
+
+.form_input_text{
+  height: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+
+}
+
+.form_button{
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: var(--cancel);
+  box-shadow: inset 0 0 20px rgb(87, 87, 87);
+}
+
+.form_button:hover{
+  box-shadow: 0 0 10px var(--cancel);
+}
+
+.null_text{
+  margin: 10px 0;
+  color: rgb(163, 162, 162);
+}
